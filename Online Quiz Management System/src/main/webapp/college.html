@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.dropbtn {
+  background-color: #f4f6ef;
+  color: rgb(11, 11, 11);
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+}
+
+.dropdown {
+  position: absolute;
+  display: inline-block;
+  margin-top: 20%;
+  margin-left: 45%;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 200px;
+  min-height: 200px;
+  text-align: center;
+  padding-top: 30px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+#bg{
+    background-image: url("spotexam.png");
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    filter: blur(5px);
+    }
+</style>
+</head>
+<body>
+<div id="bg"></div>
+
+<div class="dropdown">
+  <button onclick="myFunction()" class="dropbtn">Select Branch</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="ai&ds.html">AI&DS</a>
+    <a href="cse.html">CSE</a>
+    <a href="ece.html">ECE</a>
+    <a href="csit.html">CSIT</a>
+  </div>
+</div>
+
+<script>
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Home Page</title>
+  <link rel="stylesheet" type="text/css" href="new.css">
+</head>
+<body>
+  <header>
+  <div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="about.html">About</a><br><br>
+    <a href="service.html">Services</a><br><br>
+    <a href="contact.html">Contact</a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span>
+<div class="main">
+  <ul class="ulb">
+    <li class="active"><a href="#">Home</a><li>
+    <li><div class="dropdown">
+        <button onclick="myFunction()" class="dropbtn">Login</button>
+        <div id="myDropdown" class="dropdown-content">
+          <a href="admin.html">Admin</a>
+          <a href="user.html">User</a>
+        </div>
+      </div><li>
+        
+  </ul>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%";
+}
+function myFunction() {
+  document.getElementById("myDropdown").classList.toggle("show");
+}
+
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
+    <h2>
+        Online quiz management system
+    </h2>
+    <div class="box">
+        <img src="https://media.istockphoto.com/id/506139898/photo/business-woman-with-glasses-looking-up-at-many-question-marks.jpg?s=170667a&w=0&k=20&c=sVGr-XXE-2B78ZEUOQfsz3Ooapnaq15luNZFkOnVMWs=">
+    </div>
+</header>
+</body>
+</html>

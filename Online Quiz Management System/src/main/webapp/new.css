@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding: 0;
+    font-family: Century Gothic;
+  }
+  header{
+    background-image: url("https://t4.ftcdn.net/jpg/03/03/32/29/360_F_303322991_j4dMRbdkvaTKU8o50FJichVrYEbvjbWJ.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+  ul{
+    float:right;
+    list-style-type: none;
+    margin-top: 25px;
+  }
+  ul li{
+    display:inline-block;
+    padding:2px;
+  }
+  
+  ul li a{
+    text-decoration: none;
+    color: #fff;
+    padding: 5px 20px;
+    border: 1px solid transparent;
+    transition: 0.6s ease;
+  }
+  ul li a:hover{
+    background-color: #fff;
+    color: #000;
+  }
+  
+  ul li.active a{
+    background-color: #fff;
+    color: #000;
+  }
+  .active{
+  height: 20px;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 35px;
+  margin: 4px 2px;
+  cursor: pointer;
+  margin-top: 10px;
+  }
+  .ulb{
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  .logo img{
+    float: left;
+    width: 250px;
+    height: 100px;
+  }
+  .main{
+    max-width: 1200px;
+    margin: auto;
+    float: right;
+    height: 20px;
+  }
+  .title{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+  }
+  h2 {
+    padding-top: 100px;
+    color: rgb(255, 255, 255);
+    font-size: 50px;
+    text-align: center;
+  }
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+  
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+    }
+  }
+  span{
+      float:right;
+    padding-top: 30px;
+    padding-right: 20px;
+    color: white;
+  }
+.box{
+    position: absolute;
+    margin-left: 30%;
+    margin-top: 5%;
+}
+img{
+    border-radius: 30%;
+}
+
+
+
+
+.dropbtn {
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-left: 20px;
+  padding-right: 40px;
+  margin-top: 30px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
